@@ -1,0 +1,14 @@
+name: TranslateTool
+main: com.iroselle.TranslateTool.bukkit.TranslateTool
+version: 1.2
+author: roselle
+softdepend:
+  - PlaceholderAPI
+commands:
+  translatetool:
+    aliases:
+      - tt
+      - ttool
+permissions:
+  translatetool.admin:
+    default: op

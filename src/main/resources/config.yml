@@ -1,0 +1,25 @@
+options:
+  # 可选：Google, Baidu, Tencent, Youdao
+  # 目前稳定可用的只有 Google, Youdao
+  # Tencent 几乎无法使用
+  type: 'Google'
+  # 每次查询的间隔 毫秒，如果间隔过短, 容易出现长期拒绝访问!
+  interval: 2000
+  # 使用自定义替换术语词典, 在插件目录下的 dictionary.json 中
+  use-dictionary: true
+  # 使用快速翻译模式, 一次翻译多条, 可能会影响翻译结果!
+  use-fast-translate: true
+
+source:
+  baidu:
+    # 为了更稳定
+    # 是否启用自己的百度翻译接口
+    enabled: false
+    # appid 和 security_key,
+    # 需要去百度官方获取, 地址: https://api.fanyi.baidu.com/ , 申请成为开发者
+    # 在个人信息页面查看
+    app_id: ''
+    security_key: ''
+
+# 配置文件版本, 请不要随意修改此选项
+config-version: 1
